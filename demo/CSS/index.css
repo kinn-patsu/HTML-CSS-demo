@@ -1,0 +1,402 @@
+/*版心居中*/
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+body
+{
+    background-color: #f3f5f7;
+}
+.header{
+    height: 100px;
+    background-color: #fff;
+}
+.header .wrapper{
+    padding-top: 30px;
+    display: flex;
+}
+.logo a{
+    display: block;
+    width: 195px;
+    height: 40px;
+    background-image: url(../images/logo.png);
+    font-size: 0px;/*隐藏文字*/
+}
+
+.header .nav{
+    margin-left: 50px;
+}
+.header .nav ul{
+    display: flex;
+}
+.header .nav ul li{
+    margin-right: 24px;
+    
+}
+.header .nav ul li a{
+    display: block;/*设置链接为块级元素*/
+    padding: 6px 8px;
+    line-height: 27px;
+    font-size: 19px;
+}
+
+/*activer类选择器，表示默认选择的a*/
+.header .nav ul li .active,
+.header .nav ul li a:hover{
+    color: #1e00ff;
+    border-bottom: 2px solid #1e00ff;
+}
+.header .search{
+    display: flex;
+    margin-left: 40px;
+    padding-left: 19px;
+    padding-right: 12px;
+    display: flex;
+    width: 412px;
+    height: 40px;
+    background-color: #f3f5f7;
+    border-radius: 20px;
+}
+.search input{
+    flex: 1; /*使输入框占满剩余空间*/
+    height: 100%;
+    border: none;/*去掉输入框的边框*/
+    outline: none; /*去掉输入框的轮廓线*/
+    background-color: transparent; /*设置背景透明*/
+}
+/*父级是flex布局，子级是弹性盒子，宽高生效*/
+.search a{
+    align-self: center;/*使搜索图标垂直居中*/
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/search.png);
+}
+
+/*用户*/
+.user{
+    margin-left: 50px;
+    margin-top: 4px;
+}
+.user img{
+    vertical-align: middle; /*使图片垂直居中*/
+    margin-right: 7px; /*图片和文字之间的间距*/
+}
+.user span{
+    font-size: 16px;
+    color: #666;
+}
+
+
+/*banner*/
+.banner{
+    height: 420px;
+    background-color: #0092cb;
+}
+
+.banner .wrapper{
+    display: flex;
+    justify-content: space-between; /*使左右两侧元素分布在两端*/
+    height: 420px;
+    background-image: url(../uploads/banner.png);
+}
+.banner .left{
+    padding: 3px 20px; /*左侧内容的内边距*/
+    width: 191px;
+    height: 420px;
+    background-color: rgba(0, 0, 0, 0.5); /*半透明黑色背景*/
+    
+}
+.banner .left a{
+    height: 46px; /*链接的高度*/
+    display: block; /*设置链接为块级元素*/
+    color: #fff; /*文字颜色为白色*/
+    font-size: 16px; /*文字大小*/
+    line-height: 46px; /*行高*/
+    background: url(../images/right.png) no-repeat right center; /*设置背景图片*/
+}
+
+.banner .left a:hover{
+    background: url(../images/right-hover.png) no-repeat right center; /*鼠标悬停时的背景图片*/
+    color: #0074f9; /*鼠标悬停时文字颜色变为蓝色*/
+}
+
+
+/*右侧内容*/
+.banner .right{
+    width: 218px;
+    height: 305px;
+    margin-top: 60px; /*使右侧内容垂直居中*/
+    background-color: #209dd2; /*右侧内容的背景颜色*/
+    border-radius: 10px; /*右侧内容的圆角*/
+}
+
+.banner .right h3{
+    margin-left: 14px; /*标题的左边距*/
+    height: 48px;
+    line-height: 48px; /*标题文字垂直居中*/
+    color: #fff; /*标题文字颜色为白色*/
+    font-size: 15px; /*标题文字大小*/
+}
+.banner .right .content{
+    height: 257px;
+    background-color: #fff; /*内容区域的背景颜色*/
+    border-radius: 0 0 10px 10px; /*内容区域的圆角，只有下边缘有圆角*/
+    padding: 14px; /*内容区域的内边距*/
+}
+.banner .right .content dl{
+    margin-bottom: 12px; /*每个dl元素的下边距*/
+    border-bottom: 1px solid #e5e5e5; /*每个dl元素的下边框*/
+}
+.banner .right .content dt{
+    margin-bottom: 8px; /*标题的下边距*/
+    font-size: 14px; /*标题文字大小*/
+    line-height: 20px; /*标题文字行高*/
+    font-weight: 700; /*标题文字加粗*/
+}
+
+.banner .right .content span{
+    color: aqua; /*内容区域中span的文字颜色*/
+}
+.banner .right .content dl a{
+    display: block;
+    height: 32px;
+    background-color: #00a4ff; /*链接的背景颜色*/
+    color: #fff; /*链接的文字颜色*/
+    line-height: 32px; /*链接文字垂直居中*/
+    text-align: center; /*链接文字水平居中*/
+    border-radius: 15px; /*链接的圆角*/
+
+}
+
+.recommend{
+    display: flex; /*设置为弹性盒子布局*/
+    margin-top: 20px; /*精品推荐区域的上边距*/
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 0 20px; /*精品推荐区域的内边距*/
+    box-shadow: 0px 1px 2px 0px rgb(211, 211, 211,0.5); /*设置阴影效果*/
+    height: 60px; /*精品推荐区域的高度*/
+    line-height: 60px; /*使内容垂直居中*/
+}
+.recommend h3{
+    font-size: 18px; /*标题文字大小*/
+    color: #209dd2;
+    margin-right: 20px; /*标题和列表之间的间距*/
+}
+
+.recommend ul{
+    display: flex; /*设置为弹性盒子布局*/
+    flex:1; /*使ul占满剩余空间*/
+}
+
+.recommend ul li a{
+    padding: 0 24px;/*每个列表项的左右内边距*/
+    border-right: 1px solid #e5e5e5; /*每个列表项的右边框*/
+    font-size: 14px; /*列表项文字大小*/
+}
+
+.recommend ul li:last-child{
+    border-right: none; /*最后一个列表项没有右边框*/
+}
+
+.recommend .modify{
+    font-size: 14px; /*修改兴趣链接的文字大小*/
+    color: #209dd2; /*修改兴趣链接的文字颜色*/
+}
+.course{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.course .hd{
+    display: flex; /*设置为弹性盒子布局*/
+    justify-content: space-between; /*使标题和查看全部链接分布在两端*/
+    height: 60px;
+    line-height: 60px; /*标题文字垂直居中*/
+    font-size: 18px; /*标题文字大小*/
+}
+.course .hd h3{
+    font-size: 21px; /*标题文字大小*/
+    font-weight: 400; /*标题文字粗细*/
+}
+.hd .more{
+    padding-right: 20px; /*查看全部链接的右边距*/
+    background: url(../images/more.png) no-repeat right center; /*查看全部链接的背景图片*/
+    font-size: 14px; 
+    color: #999; /*查看全部链接的文字颜色*/
+}
+
+/* 美化课程-公共类 */
+.bd ul{
+    display: flex; /*设置为弹性盒子布局*/
+    flex-wrap: wrap; /*允许换行*/
+    padding: 0; /*去掉内边距*/
+    margin: 0; /*去掉外边距*/
+    list-style: none; /*去掉列表样式*/
+
+    justify-content: space-between; /*使列表项在行内均匀分布*/
+}
+
+
+.bd li{
+    margin-bottom: 14px;
+    width: 228px;
+    height: 271px;
+    background-color: pink;
+}
+
+.course .bd li a .pic{
+    height: 156px;
+}
+
+.course .bd li a .text{
+    padding: 20px; /*文字内容的内边距*/
+    height: 115px;
+    background-color: #fff;
+    color: #333; /*文字颜色*/
+    font-size: 14px; /*文字大小*/
+}
+
+.course .bd li a .text h4{
+    margin-bottom: 14px; /*标题的下边距*/
+    height: 37px;
+    width: 188px;
+    font-size: 14px;
+    line-height: 20px; /*标题文字行高*/
+    font-weight: 400; /*标题文字粗细*/
+    overflow: hidden; /*隐藏超出部分*/
+}
+.course .bd li a .text p{
+    font-size: 14px; /*段落文字大小*/
+    line-height: 20px; /*段落文字行高*/
+    color: #999; /*段落文字颜色*/
+}
+.course .bd li a .text span{
+    color: rgb(255, 89, 0); /*价格文字颜色*/
+}
+.course .bd li a .text i{
+    font-style: normal; /*去掉斜体样式*/
+}
+
+.de .hd{
+    display: flex; /*设置为弹性盒子布局*/
+    justify-content: space-between; /*使标题和查看全部链接分布在两端*/
+    height: 60px;
+    line-height: 60px; /*标题文字垂直居中*/
+    font-size: 18px; /*标题文字大小*/
+}
+.de .hd ul{
+    display: flex; /*设置为弹性盒子布局*/
+}
+.de .hd ul li{
+    margin-right: 20px; /*列表项之间的间距*/
+}
+.de .hd ul li .active{
+    color: #00a4ff; /*选中状态的文字颜色*/
+}
+
+.de .bd{
+    display: flex; /*设置为弹性盒子布局*/
+    justify-content: space-between; /*使内容在行内均匀分布*/
+    margin-top: 20px; /*内容区域的上边距*/
+}
+.de .bd .left{
+    width: 228px;
+
+}
+.de .bd .right{
+    width: 957px;
+
+}
+
+.de .bd .right .top{
+    margin-bottom: 15px; /*顶部内容的下边距*/
+    height: 100px;/*顶部内容的高度*/
+}
+
+.de .bd li a .pic{
+    height: 156px;
+}
+
+.de .bd li a .text{
+    padding: 20px; /*文字内容的内边距*/
+    height: 115px;
+    background-color: #fff;
+    color: #333; /*文字颜色*/
+    font-size: 14px; /*文字大小*/
+}
+
+.de .bd li a .text h4{
+    margin-bottom: 14px; /*标题的下边距*/
+    height: 37px;
+    width: 188px;
+    font-size: 14px;
+    line-height: 20px; /*标题文字行高*/
+    font-weight: 400; /*标题文字粗细*/
+    overflow: hidden; /*隐藏超出部分*/
+}
+.de .bd li a .text p{
+    font-size: 14px; /*段落文字大小*/
+    line-height: 20px; /*段落文字行高*/
+    color: #999; /*段落文字颜色*/
+}
+.de .bd li a .text span{
+    color: rgb(255, 89, 0); /*价格文字颜色*/
+}
+.de .bd li a .text i{
+    font-style: normal; /*去掉斜体样式*/
+}
+
+
+/*footer*/
+.footer{
+    margin-top: 60px; /*页脚的上边距*/
+    padding-top: 60px; /*页脚的内边距*/
+    height: 273px;
+    background-color: #fff; /*页脚的背景颜色*/
+}
+.footer .wrapper{
+    display: flex; /*设置为弹性盒子布局*/
+    justify-content: space-between; /*使内容在行内均匀分布*/
+}
+
+.footer .left{
+    width: 440px; /*左侧内容的宽度*/
+    height: 140px; /*左侧内容的高度*/
+}
+.footer .left p{
+    margin-top: 24px;
+    margin-bottom: 14px;
+}
+.footer .left .download{
+    display: block;
+    width: 120px;
+    height: 36px;
+    border: 1px solid #00a4ff; /*下载按钮的边框*/
+    color: #00a4ff; /*下载按钮的文字颜色*/
+    line-height: 36px; /*下载按钮文字垂直居中*/
+    text-align: center; /*下载按钮文字水平居中*/
+    font-size: 16px; /*下载按钮文字大小*/
+}
+.footer .right{
+    display: flex; /*设置为弹性盒子布局*/
+}
+
+.footer .right dl{
+    margin-right: 130px; /*每个右侧内容项的右边距*/
+}
+
+.footer .right dt{
+    font-size: 16px; /*标题文字大小*/
+    margin-bottom: 12px; /*标题的下边距*/
+    line-height: 24px; /*标题文字行高*/
+}
+
+.footer .right dd{
+    margin-bottom: 6px; /*每个dd元素的下边距*/
+    font-size: 14px; /*文字大小*/
+    line-height: 24px; /*文字行高*/
+    color: #666; /*文字颜色*/
+}
